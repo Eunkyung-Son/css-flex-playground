@@ -1,0 +1,24 @@
+.container {
+  border: 4px solid;
+  display: flex;
+  /*
+    컨테이너가 줄어듦에 따라서 요소의 크기가 작아짐
+    아이템들의 가로 사이즈가 컨테이너에 맞춰서 한 줄 안에 요소들이 다 들어감
+    기본값 (flex-basis: auto) => 가로 세로 값이 가변하는 형태임.
+  */
+  flex-wrap: wrap; /* 기본값 no-wrap*/
+  /*
+    아이템들이 자신의 원래 가지고 있었던 너비와 높이의 영역을 차지한다.
+    칸이 모자라니, 자연스레 줄바꿈이 된다.
+  */
+  flex-wrap: wrap-reverse;
+  /*
+    역방향으로 아이템들이 여러줄 묶음이 된다.
+  */
+}
+.container .item {
+  width: 150px;
+  height: 100px;
+  background: tomato;
+  border: 4px dashed red;
+}

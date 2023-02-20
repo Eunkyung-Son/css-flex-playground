@@ -1,8 +1,13 @@
 .container {
   border: 2px solid red;
+  display: inline-flex;
+  /* inline 요소처럼 컨테이너는
+     왼쪽에서 부터 오른쪽으로 수평으로 쌓인다.
+  */
   display: flex;
   /* display flex를 통하여 요소의 
-    수평 정렬을 쉽게 할 수 있다
+    수평 정렬을 쉽게 할 수 있다.
+    컨테이너는 수직으로 쌓인다.
   */
 }
 .container .item {

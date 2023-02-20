@@ -1,0 +1,27 @@
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/*
+  clearfix에 after 가상요소 선택자를 추가하고
+  content는 비어있고, display는 block 이고,
+  clear를 통하여 해제함.
+  컨테이너 클래스 부분에 clearfix를 준다.
+  요소들은 수평화 된다.
+*/
+
+.container {
+  border: 2px solid red;
+}
+.container .item {
+  width: 100px;
+  height: 100px;
+  border: 2px solid;
+  border-radius: 10px;
+  /* 각 각 쌓여있는 요소들에게 float 값을 줌 (수평 정렬)
+    float는 요소를 띄워주는 역할을 한다
+    컨테이너가 각 각의 요소들을 감싸지 못하게 됨.
+  */
+  float: left;
+}
